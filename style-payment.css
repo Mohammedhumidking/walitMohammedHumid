@@ -429,7 +429,7 @@ align-items: center;
 }
 
 .add-content{
-    width: 75%;
+    width: 100%;
     background-color: white;
     padding: 10px;
     display: flex;
@@ -460,4 +460,5 @@ align-items: center;
     justify-content: center;
     font-weight: bold;
     color: rgb(145, 135, 135);
+
 }
