@@ -51,7 +51,7 @@ section{
 }
 
 .section{
-    height: 90vh;
+    height: 120vh;
     background-color: #eee;
     width: 100%;
 }
@@ -220,4 +220,5 @@ section{
     width: 70%;
     margin: 10px auto;
     background-color: white;
+
 }
