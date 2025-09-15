@@ -156,6 +156,10 @@
         font-size: 1.2em;
     }
 
+ .section{
+        margin-bottom: 5px;
+    }
+
     .submit-all{
         width: 100%;
         font-size: 1.2em;
@@ -165,3 +169,4 @@
         width: 100%;
     }
 }
+
