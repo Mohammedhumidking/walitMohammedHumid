@@ -151,12 +151,10 @@
     }
 
     /* index.html */
-    .form-All{
+   .form-All{
         width: 100%;
-        font-size: 1.2em;
-    }
-.marg-midai{
-        margin: 8px auto;
+        font-size: 0.2em;
+        padding: 10px;
     }
 
     .submit-all{
@@ -164,10 +162,20 @@
         font-size: 1.2em;
     }
 
+    .marg-midai{
+        margin-bottom: 8px;
+        font-size: 0.2em;
+    }
+
+.hello{
+    font-size: 1.8em;
+}
+
     footer{
         width: 100%;
     }
 }
+
 
 
 
