@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فيزاء كارد الافتراضية</title>
+    <link rel="stylesheet" href="style-payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style-Maseeg.css">
+    <link rel="stylesheet" href="style-visa.css">
+   
+</head>
+<body dir="rtl">
+
+    <header class="header">
+        <div class="back">
+            <a href="main.html"><img src="img/logout (2).png" alt="رجوع" title="رجوع"></a>
+            <h3> فيزا كارد الافتراضية</h3>
+        </div>
+        
+    </header>
+   
+    <div class="vis-img">
+
+
+        <div class="img-type">
+            <div class="color-img">
+                <p class="o1 c1" id="id1"></p>
+                <p class="o2 c1" id="id2"></p>
+                <p class="o3 c1" id="id3"></p>
+                <p class="o4 c1" id="id4"></p>
+                <p class="o5 c1" id="id5"></p>
+                <p class="o6 c1" id="id6"></p>
+
+            </div>
+        </div>
+        
+      
+            <div class="header-visa">
+                   <i class="fa-brands fa-cc-visa"></i>
+              <div class="sh-left">
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-visa"></i>
+              </div>
+            </div>
+    </div>
+  
+    <!-- رسالة ارسال اموال -->
+
+
+<div id="id01" class="modal model-visa"> 
+        
+    <h2></h2>
+    
+    <div class="cont-masseg">
+      <p class="fontww"> شراء بطاقة فيزاء كارد الافتراضية</p>
+  
+      <img src="img/add.png" alt=""class="close" onclick="document.getElementById('id01').style.display='none'">
+    
+    </div>
+  
+    <div class="form-se">
+        <form action="#">
+
+            <div class="info-acc">
+    
+                <div class="data-acc">
+                    <p> رقم النقطة <span class="po">*</span></p>
+                    <input type="text" class="in-rgiht" >
+                </div>
+        
+                
+                    <div class="balnc">
+                        <img src="img/user.png" alt="">
+                    </div>
+        
+            </div>
+    
+            <div class="info-acc">
+    
+                <div class="data-acc">
+                    <p>  المبلغ <span class="po">*</span></p>
+                    <input type="text" class="in-rgiht" >
+                </div>
+        
+                
+                    <div class="balnc">
+                        <img src="img/transfer.png" alt="">
+                    </div>
+        
+            </div>
+   
+            <input type="submit" class="save">
+        </form>
+       
+    </div>
+  </div> 
+  
+  <!-- end رسالة ارسال اموال -->
+  
+
+    <section class="content">
+
+       <div class="v-info">
+        <h2>بطاقة فيزا كارد لمدة سنتين فقط بـ 12 USD</h2>
+        <p class="fontww">استمتع بمزايا التسوق الامن والسريع مع صلاحية البطاقة لمدة سنتين. رسوم الاصدار فقط 12 USD</p>
+       </div>
+
+       <div class="condition">
+          <ul>
+            <li type="number">قبول عالمي في المتاجر والمواقع الالكترونية</li>
+            <li type="number">قبول عالمي في المتاجر والمواقع الالكترونية</li>
+            <li type="number">قبول عالمي في المتاجر والمواقع الالكترونية</li>
+          </ul>
+
+        
+          <div class="chek-vis">
+            <input type="checkbox" class="checkbox" id="forii">
+            <label for="forii"><span>أوافق على </span>الشروط والاحكام</label>
+          </div>
+       </div>
+       
+       <input type="button" onclick="document.getElementById('id01').style.display = 'block' " value="انشاء البطاقة الان" class="save">
+
+
+  
+    </section>
+ 
+
+    <script src="main_main.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+.conural .head-border{
+    background-color: white;
+    width: 40%;
+    height: 80px;
+    padding: 15px;
+    margin: 10px auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    
+
+    font-weight: bold;
+    box-shadow: 0 4px  #ccc;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.conural .head-border:hover{
+    transform: scale(1.1);
+}
+
+.head-border img{
+   width: 50px;
+   
+   margin-bottom: 5px;
+}
+
+
+
+.conural{
+    display: flex;
+    width: 60%;
+    margin: 10px auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+

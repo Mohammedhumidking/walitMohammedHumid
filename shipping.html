@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  شحن رصيد</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styly-sipping.css">
+    <link rel="stylesheet" href="style-payment.css">
+</head>
+<body dir="rtl" id="body">
+    <header class="header">
+        <div class="back">
+            <a href="main.html"><img src="img/logout (2).png" alt="رجوع" title="رجوع"></a>
+            <h3> شحن رصيد</h3>
+        </div>
+        <div class="pdf">
+            <a href="#"><img src="img/gear.png" alt="اعدادات" title="اعدادات"></a>
+        </div>
+    </header>
+
+    <section class="content">
+        <form action="#">
+            <div class="info-acc">
+                <div class="data-acc">
+                    <p> رقم الموبايل <span class="po">*</span></p>
+                    <input type="text" class="in-rgiht" id="disinput">
+                </div>
+                <div class="balnc">
+                    <a href="#"><img src="img/phone-call.png" alt="qr"></a>
+                </div>
+            </div>
+
+        <div id="disnone">
+            <h4 >استعلام</h4>
+
+            <div class="shipping-accu disnone">
+                <div class="shipp-btn">
+                    <button class="btn bone">دفع مسبق</button>
+                    <button class="btn"> فواتير</button>
+                    <button class="btn"> سداد وتفعيل الباقات</button>
+                    <button class="btn"> سداد وتفعيل الباقات مع السلفة</button>
+                    <button class="btn"> تفعيل الباقات فقط</button>
+                </div>
+            </div>
+
+            <div class="info-acc disnone">
+                <div class="data-acc">
+                    <p>  المبلغ <span class="po">*</span></p>
+                    <input type="text" class="in-rgiht" >
+                </div>
+                <div class="balnc">
+                    <a href=""><img src="img/transfer.png" alt="qr"></a>
+                </div>
+            </div>
+        <input type="submit" class="save disnone" value="أستلام">
+    </div>
+    </form>
+</section>
+
+
+    <script src="shippJS.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+.massage img{
+    width: 40px;
+}
+
+.massage h2{
+    background-color: blue;
+    width: 80px;
+    height: 10px;
+    border-radius: 15px;
+    margin: 10px auto;
+}
+
+body{
+    height: 200vh;
+}
+
+.massage{
+    margin: 20px auto;
+    padding-left: 8%;
+    padding-right: 8%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    text-align: center;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 2px 2px 2px 2px #ccc;
+    cursor: pointer;
+    z-index: 1200;
+    display: none;
+}
+
+.massage *{
+    margin: 10px;
+    text-align: center;
+}
+
+.massage h3{
+    color: red;
+}
+
+.btn-logout{
+    width: 30%;
+    margin: 10px auto;
+    padding: 10px;
+    color: white;
+    background-color: red;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    font-size: 2.16vh;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.btn-logout:hover{
+    transform: scale(1.1);
+}
+

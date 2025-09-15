@@ -1,0 +1,463 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    padding-left: 8%;
+    padding-right: 8%;
+
+    padding-top: 10px;
+    height: 10vh;
+
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img{
+    width: 40px;
+}
+
+html{
+    font-size: 16px;
+    background-color: #eee;
+}
+
+.back{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.back h3{
+    margin-right: 40px;
+}
+
+.back img{
+   width: 30px;
+}
+
+.back a{
+    border: 1px solid transparent;
+    transition: 0.4s;
+}
+
+.back a:hover{
+    border: 1px solid blue;
+}
+
+section{
+    width: 100%;
+}
+
+.content{
+    padding-left: 8%;
+    padding-right: 8%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+
+}
+
+.info-acc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid blue;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    background-color: white;
+    width: 80%;
+    margin: 10px auto;
+
+}
+
+.all-data{
+    display: flex;
+    justify-content: space-between;
+}
+
+.balnc{
+    margin-left: 30px;
+   
+}
+
+.balnc img{
+    width: 30px;
+  
+}
+
+.balnc{
+    border: 1px solid transparent;
+}
+
+.RY{
+    margin-left: 30px;
+}
+
+.po{
+    color: red;
+}
+
+.in-rgiht{
+   
+    padding-right: 20px;
+}
+
+.data-acc input{
+   border: none;
+}
+
+.end{
+    padding-right: 27%;
+    color: #000;
+    font-weight: bold;
+    
+}
+
+.save{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    width: 50%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.save:hover{
+    transform: scale(1.1);
+    border: 1px solid white;
+}
+
+@media (max-width: 800px){
+    .header{
+     width: 100%;
+     padding-left: 8%;
+     padding-right: 8%;
+    }
+ 
+    .save{
+        width: 100%;
+    }
+ 
+    .info-acc{
+        width: 100%;
+    }
+ 
+    .content{
+     width: 100%;
+ }
+
+ .end{
+    padding-right: 8%;
+
+ }
+ 
+
+}
+
+/* ارسال حوالة تضامن باي */
+
+.info-tran img{
+    width: 30px;
+    height: 30px;
+
+}
+
+.info-tran{
+    display: flex;
+    justify-content: space-between;
+align-items: center;
+}
+
+.info-tran img{
+    margin-left: 15px;
+}
+
+
+.info-acc-selc{
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.data-acc-se{
+    border: 1px solid blue;
+    padding: 10px;
+    border-radius: 15px;
+    margin-right: 18px;
+    margin-left: 18px;
+    background-color: white;
+    width: 39%;
+}
+
+.chesk{
+    margin-top: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: #000;
+   font-weight: bold;
+}
+
+.chesk label{
+    margin-right: 20px;
+}
+
+.select{
+    color: #000;
+    font-weight: bold;
+    width: 100%;
+    border: none;
+    
+}
+
+/* تحويل الى محفظة */
+
+.phone-apr img{
+    width: 30px;
+}
+
+.phone-apr{
+    display: flex;
+    justify-content: space-between;
+   margin: 10px auto;
+    width: 100%;
+    background-color: white;
+    padding: 5px;
+    box-shadow: 2px 2px 4px 5px #ccc;
+    border-radius: 10px;
+}
+
+.phone-apr .ph-one-1{
+    text-decoration: none;
+   width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: blue;
+    padding: 5px;
+    height: 7vh;
+    font-weight: bold;
+    border-radius: 10px;
+   
+
+}
+
+/* فيزا كارد الافتراضية */
+
+.vis-img img{
+    width: 40px;
+    height: 40px;
+}
+
+.vis-img{
+    display: flex;
+    justify-content: space-between;
+    height: 30vh;
+    width: 100%;
+    padding-left: 8%;
+    padding-right: 8%;
+    color: white;
+    
+}
+
+.color-img .c1{
+    background-color: blue;
+    width: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.header-visa{
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+    padding: 10px;
+    width: 50%;
+   
+    border-radius: 10px;
+    height: 30vh;
+}
+
+
+.contect-visa{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    background-color: red;
+    padding: 10px;
+    height: 30vh;
+   position: absolute;
+
+}
+
+.sh-left img{
+    width: 50px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.header-visa i{
+    font-size: 40px;
+    color: white;
+}
+
+.id1{
+    background-color: blue;
+}
+
+.color-img .o2{
+    background-color: red;
+
+}
+
+.id2{
+    background-color: red;
+}
+
+.id3{
+    background-color: rgb(197, 197, 16);
+}
+
+.color-img .o3{
+    background-color: rgb(197, 197, 16);
+}
+
+.id4{
+    background-color: rgb(255, 0, 179);
+
+}
+
+.color-img .o4{
+    background-color: rgb(255, 0, 179);
+}
+
+.id5{
+    background-color: rgb(26, 128, 0);
+
+}
+
+.color-img .o5{
+    background-color: rgb(26, 128, 0);
+}
+
+.id6{
+    background-color: #000;
+
+}
+
+.color-img .o6{
+    background-color: #000;
+}
+
+.v-info{
+ text-align: center;
+ margin-top: 20px;
+ margin-bottom: 20px;
+ font-weight: bold;
+}
+
+.fontww{
+    color: gray;
+}
+
+.v-info *{
+    margin-top: 10px;
+}
+
+.condition {
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.condition *{
+    margin-top: 20px;
+}
+
+.chek-vis label{
+    margin-right: 10px;
+}
+
+.chek-vis label{
+    color: blue;
+}
+
+.chek-vis label span{
+    color: #000;
+}
+
+.checkbox{
+    cursor: pointer;
+}
+
+.checkbox:checked::before{
+    color: red;
+}
+
+.data-acc{
+    display: flexS;
+}
+
+.pdf *{
+    margin-left: 10px;
+}
+
+/* اضافة الخدمات المفضلة */
+
+.add-content img{
+    width: 40px;
+}
+
+.add-content{
+    width: 75%;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-shadow: 2px 2px 4px 5px #ccc;
+    border: 1px solid transparent;
+    transition: 0.4s;
+    cursor: pointer;
+    margin: 10px auto;
+}
+
+.add-content:hover{
+    border: 1px solid blue;
+}
+
+.add-content *{
+    margin-left: 20px;
+}
+
+.content .pco{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: rgb(145, 135, 135);
+}

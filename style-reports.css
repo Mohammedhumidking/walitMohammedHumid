@@ -1,0 +1,40 @@
+.content{
+    width: 100%;
+    height: 100vh;
+}
+
+.repet-head{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px auto;
+    align-items: center;
+}
+
+.repet-head button{
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+}
+
+.pargraph{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.masseg-report-no img{
+   width: 150px;
+}
+
+.masseg-report-no{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 60px;
+}
+
+

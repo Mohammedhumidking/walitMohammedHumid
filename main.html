@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الرئيسية</title>
+    <link rel="stylesheet" href="stylemai.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style-Maseeg.css">
+<link rel="stylesheet" href="styleallMasseg.css">
+<link rel="stylesheet" href="midai.css">
+
+
+
+</head>
+<body dir="rtl">
+   
+      <header class="header">
+
+        <div class="rightdiv">
+          <img src="img/man.png" alt="logo">
+          <div class="text">
+            <p>مساء الخير</p>
+          
+            <strong>محمد</strong>
+          </div>
+         
+        </div>
+      
+        <div class="leftdiv">
+          <a href="#"><img src="img/circle.png" alt="اشعارات" title="اشعارات جديدة"></a>
+          <a href="#" target="_self" id="Masseg-All"><img src="img/logout (1).png" alt="logout" title="تسجيل خروج"></a>  
+                 
+        </div>
+
+      </header>
+     
+      
+    
+
+  <section class="head">
+
+<!-- رسالة ارسال اموال -->
+
+<div id="id01" class="modal"> 
+        
+  <h2></h2>
+  
+  <div class="cont-masseg">
+    <h3>خدمة ارسال اموال</h3>
+
+    <img src="img/add.png" alt=""class="close" onclick="document.getElementById('id01').style.display='none'">
+  
+  </div>
+
+  <div class="form-se">
+
+      <input type="text" placeholder="ابحث عن خدمة" >
+
+
+      <a href="payment.html" class="serv-masseg">
+        <img src="img/shopping-cart.png" alt="">
+        <p> سداد مشتريات</p>
+      </a>
+
+      <a href="send-tran.html" class="serv-masseg">
+        <img src="img/tdhamn.png" alt="">
+        <p>  ارسال حوالة تضامن باي</p>
+      </a>
+
+      <a href="tran-wallet.html" class="serv-masseg">
+        <img src="img/data-transformation.png" alt="">
+        <p>  تحويل الى محفظة </p>
+      </a>
+
+      <a href="#" class="serv-masseg">
+        <img src="img/gamepad.png" alt="">
+        <p> اللعاب الكترونية والتطبيقات</p>
+
+      </a>
+
+      <a href="visa.html" class="serv-masseg">
+        <img src="img/card.png" alt="">
+        <p>  فيزا كارد الافتراضية</p>
+      </a>
+     
+  </div>
+</div> 
+
+<!-- end رسالة ارسال اموال -->
+
+
+<!-- رسالة استلام اموال -->
+
+
+<div id="idM1" class="modal"> 
+        
+  <h2></h2>
+  
+  <div class="cont-masseg">
+    <h3>خدمة استلام اموال</h3>
+
+    <img src="img/add.png" alt=""class="close" onclick="document.getElementById('idM1').style.display='none'">
+  
+  </div>
+
+  <div class="form-se">
+
+      <input type="text" placeholder="ابحث عن خدمة" >
+
+
+      <a href="payment.html" class="serv-masseg">
+        <img src="img/tdhamn.png" alt="">
+        <p> استلام حوالة تضامن باي</p>
+      </a>
+
+
+      <a href="tran-bank.html" class="serv-masseg">
+        <img src="img/data-transformation (1).png" alt="">
+        <p> التحويل من الحساب البنكي </p>
+      </a>
+
+
+      <a href="cansle.html" class="serv-masseg">
+        <img src="img/cancel.png" alt="">
+        <p> الغاءحوالة تضامن باي</p>
+      </a>
+     
+  </div>
+</div> 
+
+<!-- end رسالة ارسال اموال -->
+
+
+
+  <div class="head-all">
+
+    <div class="ander" id="cont-up">
+     <p>اسحب للاسفل للتحديث</p>
+     <div class="balnc">
+     <p id="RY-YEM" style="width: 170px;">الرصيد الحالي ريال يمني</p>
+     <i id="id-eye1" class="fa-sharp-duotone fa-solid fa-eye-slash " style="display: block;"></i>
+     <i id="id-eye2" class="fa-sharp-duotone fa-solid fa-eye " style="display: none;"></i>
+    </div>
+
+    <div class="RY" id="RYAll">
+      <p class="NoRY" style="display: block;">*******</p>
+      <p class="YesRY" style="display: none;">00000</p>
+    </div>
+
+  </div>
+
+
+    </div>
+    <div class="send-reci">
+      <div class="tdrj">
+        <h2 style="background-color: white;border: 1px solid blue;"></h2>
+        <h2></h2>
+        <h2></h2>
+      </div>
+      <div class="send bor" onclick="document.getElementById('id01').style.display='block'">
+        <a href="#" title="ارسال اموال" ><i class="fa-solid fa-up-right-from-square"></i><p>أرسال اموال</p></a>
+      </div>
+
+      <div class="respit bor" onclick="document.getElementById('idM1').style.display='block'">
+        <a href="#" title="استلام اموال" ><img src="img/receive-money.png" alt=""><p>استلام اموال</p></a>
+
+      </div>
+        <a href="operation.html" class="reminer" title="العمليات"><i class="fa-duotone fa-solid fa-book"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+     </div>
+    </div>
+  </section>
+  <section class="transform">
+    <div class="opritio-all">
+      <div class="opritio">
+        <div class="ico">
+          <a href="shipping.html"><img src="img/payment.png" alt="شحن رصيد" title="شحن رصيد"></a>
+          <a href="BillPayment.html"><img src="img/receipt.png" alt="سداد" title=" سداد فواتير"></a>
+          <a href="#"><img src="img/gamepad.png" alt="العاب" title=" الالعاب والتطبيقات"></a>
+          <a href="tran-bank.html"><img src="img/data-transformation (1).png" alt="" title=" التحويل من الحساب"></a>
+          <a href="payment.html"><img src="img/shopping-cart.png" alt="مشتريات" title=" سداد مشتريات"></a>
+          <a href="addServices.html"><img src="img/add.png" alt="" title=" اضافة خدمة"></a>
+        </div>
+        
+        <div class="ico-text">
+         <p>شحن رصيد</p>
+         <p>سداد فواتير</p>
+         <p>العاب والتطبيقات</p>
+         <p> التحويل من الحساب</p>
+         <p> سداد مشتريات</p>
+         <p> اضافة خدمة</p>
+        </div>
+    </div>
+  </section>
+  <section class="content">
+  <div class="advirt">
+      
+    <a href="#" class="advi-icon icon-one">
+      <div class="shoping">
+        <p>تسوق باستخدام بطاقة فيزاء الافتراضية</p>
+        <img src="img/card.png" alt="">
+      </div>
+    </a>
+
+    <a href="#" class="advi-icon icon-two">
+      <div class="shoping">
+        <p>اربح 300 ريال يمني لكل دعوة تقوم با ارسالها الى صديقك</p>
+        <img src="img/card.png" alt="card-visa">
+      </div>
+    </a>
+
+    <a href="#" class="advi-icon icon-three">
+      <div class="shoping">
+        <p>تسوق باستخدام بطاقة فيزاء الافتراضية</p>
+        <img src="img/tdhamn.png" alt="">
+      </div>
+    </a>
+
+  </div>
+  </section>
+  <section class="services">
+    <div class="servic-all">
+      <div class="services-addres">
+        <p>الخدمات</p>
+        <div class="serv-left">
+          <a href="#">عرض الكل</a>
+          
+          <img src="img/option.png" alt="" style="display: block;">
+          <img src="img/circle (1).png" alt="" style="display: none;">
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="all">
+    <div class="all-services">
+
+      <a href="#" class="one-ser">
+        <img src="img/cash-back.png" alt="cash" class="image-serv">
+        <p> التحويلات المالية</p>
+      </a>
+
+      <a href="shipping.html" class="one-ser">
+        <img src="img/payment.png" alt="cash" class="image-serv">
+        <p> شحن رصيد</p>
+      </a>
+
+      <a href="BillPayment.html" class="one-ser">
+        <img src="img/receipt.png" alt="cash" class="image-serv">
+        <p>سداد فواتير</p>
+      </a>
+
+      <a href="#" class="one-ser" onclick="document.getElementById('idM1').style.display='block'">
+        <img src="img/tdhamn.png" alt="cash" class="image-serv">
+        <p> تضامن باي</p>
+      </a>
+
+      <a href="#" class="one-ser">
+        <img src="img/gamepad.png" alt="cash" class="image-serv">
+        <p>  الالعاب والتطبيقات</p>
+      </a>
+
+      <a href="#" class="one-ser">
+        <img src="img/report-card.png" alt="cash" class="image-serv">
+        <p>  مطلبات السداد</p>
+      </a>
+
+      <a href="#" class="one-ser">
+        <img src="img/shopping-cart.png" alt="cash" class="image-serv">
+        <p>  سداد المشتريات</p>
+      </a>
+
+      <a href="#" class="one-ser">
+        <img src="img/mortarboard.png" alt="cash" class="image-serv">
+        <p>  مدفوعات التعليم</p>
+      </a>
+
+      <a href="#" class="one-ser">
+        <img src="img/debit-card.png" alt="cash" class="image-serv">
+        <p>  مدفوعات حكومية</p>
+      </a>
+
+      <a href="visa.html" class="one-ser">
+        <img src="img/atm-card.png" alt="cash" class="image-serv">
+        <p>  بطاقة فيزا</p>
+      </a>
+
+    </div>
+  <h3 style="display: flex;justify-content:center; ">تم التصميم والبرمجة بواسطة م/محمد عبدالله حُميد</h3>
+
+  </section>
+
+  <footer class="footer">
+      <div class="sochail">
+        <a href="#" class="captel ss" target="_self"><img src="img/home.png" alt=""></a>
+        <a href="reports.html" class="ss" target="_self"><img src="img/report.png" alt="تقارير" title="تقارير"></a>
+        <a href="#" class="ss" target="_self"><img src="img/qr.png" alt=""></a>
+        <a href="#" class="ss" target="_self"><img src="img/console.png" alt=""></a>
+        <a href="dataMy.html" class="ss" target="_self"><img src="img/user-access.png" alt=""></a>
+      </div>
+  </footer>
+
+  <!-- رسالة  تسجيل خروج -->
+  <div class="massage" id="massage-logou">
+    <h2></h2>
+       <a href="#"> <img src="img/logout.png" alt=""></a>
+        <h3>هل تريد تسجيل الخروج ؟</h3>
+       <a href="index.html" target="_self"> <button class="btn-logout" id="btn-out-yes">نعم سجل خروج</button></a>
+    </div>
+
+  <script src="main_main.js"></script>
+  <script src="MassegAll.js"></script>
+</body>
+</html>
