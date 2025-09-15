@@ -155,9 +155,8 @@
         width: 100%;
         font-size: 1.2em;
     }
-
- .section *{
-        margin-bottom: 5px;
+.marg-midai{
+        margin: 8px auto;
     }
 
     .submit-all{
@@ -169,5 +168,6 @@
         width: 100%;
     }
 }
+
 
 
