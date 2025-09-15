@@ -156,7 +156,7 @@
         font-size: 1.2em;
     }
 
- .section{
+ .section *{
         margin-bottom: 5px;
     }
 
@@ -169,4 +169,5 @@
         width: 100%;
     }
 }
+
 
