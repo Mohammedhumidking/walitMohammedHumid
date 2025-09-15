@@ -4,11 +4,15 @@
     .header{
         padding-left: 2%;
         padding-right: 2%;
-        font-size: 0.8em;
+        font-size: 1.2em;
         padding-bottom: 10px;
         margin: 0 auto;
         
         
+    }
+
+    .ander{
+        font-size: 1.2em;
     }
 
     .rightdiv img{
@@ -33,10 +37,21 @@
     .advi-icon{
         margin-top: 5px;
     }
+
+    .opritio-all{
+        width: 120%;
+        position: relative;
+        left: 30px;
+    }
     
     .opritio{
         width: 100%;
         margin: 0 auto;
+    }
+
+    .ico-text p{
+        text-align: center;
+        font-size: 0.8em;
     }
 
     .ico a img{
@@ -87,15 +102,23 @@
      .send-reci{
         font-size: 1.2em;
         text-align: center;
-
+        width: 120%;
+        position: relative;
+        left: 80px;
     }
 
-    .send{
+    .mida-send {
         width: 40%;
+        font-size: 0.8em;
+        width: 100%;
+        
     }
 
    .tdrj{
     margin: 0 auto;
+    position: relative;
+    left: -20px;
+    top: -20px;
    }
 
      .footer{
@@ -113,9 +136,32 @@
         font-size: 1.2em;
         height: 80vh;
     }
-
+/* الرسال */
     .massage{
         font-size: 1.1em;
+    }
 
+    .serv-masseg {
+        font-size: 0.8em;
+        padding: 5px;
+    }
+
+    .serv-masseg p{
+        margin-right: 15px;
+    }
+
+    /* index.html */
+    .form-All{
+        width: 100%;
+        font-size: 1.2em;
+    }
+
+    .submit-all{
+        width: 100%;
+        font-size: 1.2em;
+    }
+
+    footer{
+        width: 100%;
     }
 }
