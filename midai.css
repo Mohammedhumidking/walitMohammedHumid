@@ -132,24 +132,30 @@
         z-index: 999;
     }
 
-    .modal{
-        font-size: 1.6em;
+  
+/* الرسال */
+   .modal{
         height: 80vh;
     }
-/* الرسال */
-    .massage{
+ 
+ .modal h3{
+        font-size: 1em;
+    }
+ 
+   .massage{
         font-size: 1.1em;
     }
 
     .serv-masseg {
-        font-size: 0.4em;
+        font-size: 0.8em;
         padding: 5px;
+        height: 5vh;
     }
 
     .serv-masseg p{
         margin-right: 15px;
+        font-size: 0.8em;
     }
-
     /* index.html */
    .form-All{
         width: 100%;
@@ -175,6 +181,7 @@
         width: 100%;
     }
 }
+
 
 
 
