@@ -139,7 +139,7 @@
     }
  
  .modal h3{
-        font-size: 24px;
+        font-size: 30px;
     }
  
    .massage{
@@ -153,7 +153,7 @@
 
     .serv-masseg p{
         margin-right: 15px;
-        font-size: 10px;
+        font-size: 5px;
     }
     /* index.html */
    .form-All{
@@ -180,6 +180,7 @@
         width: 100%;
     }
 }
+
 
 
 
