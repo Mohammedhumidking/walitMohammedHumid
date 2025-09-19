@@ -148,12 +148,12 @@
 
     .serv-masseg {
         padding: 5px;
-        height: 5vh;
+        height: 8vh;
     }
 
     .serv-masseg p{
         margin-right: 15px;
-        font-size: 14px;
+        font-size: 10px;
     }
     /* index.html */
    .form-All{
@@ -180,6 +180,7 @@
         width: 100%;
     }
 }
+
 
 
 
