@@ -1,5 +1,5 @@
 
-@media (max-width: 1023px) {
+@media (max-width: 1023px ) and (min-width: 300px){
  
     .header{
         padding-left: 2%;
@@ -180,6 +180,7 @@
         width: 100%;
     }
 }
+
 
 
 
