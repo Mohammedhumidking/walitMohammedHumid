@@ -71,7 +71,7 @@
       // الحصول على الكاميرات المتوفرة
       const cameras = await Html5Qrcode.getCameras();
       if (cameras && cameras.length) {
-        const cameraId = cameras[1].id; // استخدم الكاميرا الأولى (الخلفية عادة على الجوال)
+        const cameraId = cameras[2].id; // استخدم الكاميرا الأولى (الخلفية عادة على الجوال)
         html5QrCode.start(
           cameraId,
           { fps: 10, qrbox: 250 },
@@ -157,5 +157,6 @@
     
 </body>
 </html>
+
 
 
