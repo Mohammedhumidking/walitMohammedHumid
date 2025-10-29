@@ -37,14 +37,15 @@
             <p>اهلاً بك</p>
         </div>
 
-                     <script src="https://unpkg.com/html5-qrcode"></script>
+   <script src="https://unpkg.com/html5-qrcode"></script>
    <style>
      body { font-family: Arial, sans-serif; text-align:center; direction:rtl; }
      #reader { width: 300px; margin: 20px auto; }
-     button {
+     #closeid {
       background-color: #007bff; color: white; border: none;
       padding: 10px 20px; font-size: 16px; border-radius: 5px;
        cursor: pointer; margin-top: 10px;
+         display: none;
      }
      #result { font-weight: bold; margin-top: 15px; }
    </style>
@@ -67,7 +68,7 @@
     startBtn.addEventListener('click', async () => {
       startBtn.style.display = 'none';   // أخفِ الزر
       readerDiv.style.display = 'block'; // أظهر الماسح
-      closeid.style.display = 'block';   // الكامراء أخفِ الزر
+      closeid.style.display = 'block';   // الكامراء اطهر الزر
 
       // إنشاء كائن الماسح
       html5QrCode = new Html5Qrcode("reader");
@@ -164,6 +165,7 @@ closeid.onclick = function () {
     
 </body>
 </html>
+
 
 
 
