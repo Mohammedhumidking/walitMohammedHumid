@@ -37,24 +37,25 @@
             <p>اهلاً بك</p>
         </div>
 
-        <div class="first-name marg-midai">
-            <p>محمد</p>
-        </div>
-           <script src="https://unpkg.com/html5-qrcode"></script>
-  <style>
-    body { font-family: Arial, sans-serif; text-align:center; direction:rtl; }
-    #reader { width: 300px; margin: 20px auto; }
-    button {
+                     <script src="https://unpkg.com/html5-qrcode"></script>
+   <style>
+     body { font-family: Arial, sans-serif; text-align:center; direction:rtl; }
+     #reader { width: 300px; margin: 20px auto; }
+     button {
       background-color: #007bff; color: white; border: none;
       padding: 10px 20px; font-size: 16px; border-radius: 5px;
-      cursor: pointer; margin-top: 10px;
-    }
-    #result { font-weight: bold; margin-top: 15px; }
-  </style>
-                   <img id="startScan" width="40px" src="img/qr.png" alt="qrcode">
-  <div id="reader" style="display:none;"></div>
+       cursor: pointer; margin-top: 10px;
+     }
+     #result { font-weight: bold; margin-top: 15px; }
+   </style>
+
+   <h2>قراءة كود QR بالكاميرا</h2>
+   <!-- <button id="startScan">ابدأ المسح الآن</button> -->
+  <img id="startScan" width="40px" src="img/qr.png" alt="qrcode">
+   <div id="reader" style="display:none;"></div>
   <div id="result">النتيجة: -</div>
-           <script>
+
+  <script>
     let html5QrCode;
     const readerDiv = document.getElementById('reader');
     const resultDiv = document.getElementById('result');
@@ -104,6 +105,9 @@
         alert("لم يتم العثور على كاميرا!");
       }
     });
+  </script>  
+          
+          
         <div class="form-All marg-midai">
 
             <p> كلمة المرور <span>*</span></p>
@@ -146,6 +150,7 @@
     
 </body>
 </html>
+
 
 
 
