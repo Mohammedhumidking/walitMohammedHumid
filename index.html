@@ -48,9 +48,12 @@
          display: none;
      }
      #result { font-weight: bold; margin-top: 15px; }
+       #QRText{
+         display: none;
+       }
    </style>
 
-   <h2>قراءة كود QR بالكاميرا</h2>
+   <h2 id="QRText">قراءة كود QR بالكاميرا</h2>
    <!-- <button id="startScan">ابدأ المسح الآن</button> -->
   <img id="startScan" width="40px" src="img/qr.png" alt="qrcode">
    <div id="reader" style="display:none;"></div>
@@ -64,11 +67,15 @@
     const resultDiv = document.getElementById('result');
     const startBtn = document.getElementById('startScan');
     const closeid = document.getElementById('closeid');
+    const QRText = document.getElementById('QRText');
+      
 
     startBtn.addEventListener('click', async () => {
       startBtn.style.display = 'none';   // أخفِ الزر
       readerDiv.style.display = 'block'; // أظهر الماسح
       closeid.style.display = 'block';   // الكامراء اطهر الزر
+      QRText.style.display = 'block';   // اظهار نص qr QRText
+        
 
       // إنشاء كائن الماسح
       html5QrCode = new Html5Qrcode("reader");
@@ -116,6 +123,8 @@ closeid.onclick = function () {
     html5QrCode.stop().then(() => {
        readerDiv.style.display = 'none';
        startBtn.style.display = 'inline-block';
+      closeid.style.display = 'none';   // الكامراء اطهر الزر
+      QRText.style.display = 'none';   // اخفاء نص qr QRText
      });
 };
         
@@ -165,6 +174,7 @@ closeid.onclick = function () {
     
 </body>
 </html>
+
 
 
 
