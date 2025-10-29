@@ -61,37 +61,12 @@
                         <i class="fa-sharp-duotone fa-solid fa-eye-slash bb" style="display: block;" id="eyeblock"></i>
                         <i class="fa-sharp-duotone fa-solid fa-eye bb" style="display: none;" id="eyenone"></i>
                     </div>
-                    <!-- <img id="startScan" src="img/qr.png" alt=""> -->
                 </div>
         </div>
           <img id="startScan" width="40px" src="img/qr.png" alt="qrcode">
   <div id="reader" style="display:none;"></div>
   <div id="result">النتيجة: -</div>
-          <div class="submit-all marg-midai">
-                <a href="#" class="a-pass">هل نسيت كلمة المرور؟</a>
-                <input type="submit" id="save" class="save" value="تسجيل الدخول">
-            </form>
-            <div class="not-accunt marg-midai">
-                <p>ليس لديك حساب؟</p>
-                <a href="#">أنشاء حساب جديد</a>
-            </div>
-           </div>
-      </div>
-  </section>
-
-
-<footer class="footer-log">
-    <div class="sochail">
-        <img src="img/logo.jpg" alt="logo">
-        <img src="img/tdhamn.png" alt="logo">
-        <img src="img/shar2.png" alt="logo">
-    </div>
-</footer>
-
-
-
-    <script src="main_main.js"></script>
- <script>
+           <script>
     let html5QrCode;
     const readerDiv = document.getElementById('reader');
     const resultDiv = document.getElementById('result');
@@ -141,10 +116,36 @@
         alert("لم يتم العثور على كاميرا!");
       }
     });
+          <div class="submit-all marg-midai">
+                <a href="#" class="a-pass">هل نسيت كلمة المرور؟</a>
+                <input type="submit" id="save" class="save" value="تسجيل الدخول">
+            </form>
+            <div class="not-accunt marg-midai">
+                <p>ليس لديك حساب؟</p>
+                <a href="#">أنشاء حساب جديد</a>
+            </div>
+           </div>
+      </div>
+  </section>
+
+
+<footer class="footer-log">
+    <div class="sochail">
+        <img src="img/logo.jpg" alt="logo">
+        <img src="img/tdhamn.png" alt="logo">
+        <img src="img/shar2.png" alt="logo">
+    </div>
+</footer>
+
+
+
+    <script src="main_main.js"></script>
+
    
     
 </body>
 </html>
+
 
 
 
