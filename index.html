@@ -104,6 +104,16 @@
       } else {
         alert("لم يتم العثور على كاميرا!");
       }
+
+              // تجريب عند الضغط على الكامراء يتم اغلاقها
+reader.onclick = function () {
+    // أوقف الكاميرا فورًا
+    html5QrCode.stop().then(() => {
+       readerDiv.style.display = 'none';
+       startBtn.style.display = 'inline-block';
+     });
+};
+        
     });
   </script>  
           
@@ -150,6 +160,7 @@
     
 </body>
 </html>
+
 
 
 
