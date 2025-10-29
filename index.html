@@ -53,6 +53,8 @@
    <!-- <button id="startScan">ابدأ المسح الآن</button> -->
   <img id="startScan" width="40px" src="img/qr.png" alt="qrcode">
    <div id="reader" style="display:none;"></div>
+   <button id="closeid"> اغلاق المسج (الكامراء) </button>
+
   <div id="result">النتيجة: -</div>
 
   <script>
@@ -60,10 +62,12 @@
     const readerDiv = document.getElementById('reader');
     const resultDiv = document.getElementById('result');
     const startBtn = document.getElementById('startScan');
+    const closeid = document.getElementById('closeid');
 
     startBtn.addEventListener('click', async () => {
       startBtn.style.display = 'none';   // أخفِ الزر
       readerDiv.style.display = 'block'; // أظهر الماسح
+      closeid.style.display = 'block';   // الكامراء أخفِ الزر
 
       // إنشاء كائن الماسح
       html5QrCode = new Html5Qrcode("reader");
@@ -106,7 +110,7 @@
       }
 
               // تجريب عند الضغط على الكامراء يتم اغلاقها
-reader.onclick = function () {
+closeid.onclick = function () {
     // أوقف الكاميرا فورًا
     html5QrCode.stop().then(() => {
        readerDiv.style.display = 'none';
@@ -160,6 +164,7 @@ reader.onclick = function () {
     
 </body>
 </html>
+
 
 
 
