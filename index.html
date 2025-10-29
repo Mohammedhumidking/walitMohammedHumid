@@ -36,7 +36,7 @@
         <div class="hello marg-midai">
             <p>اهلاً بك</p>
         </div>
-
+<!-- 
            <script src="https://unpkg.com/html5-qrcode"></script>
   <style>
     body { font-family: Arial, sans-serif; text-align:center; direction:rtl; }
@@ -105,12 +105,22 @@
         alert("لم يتم العثور على كاميرا!");
       }
     });
-  </script> 
+  </script>  -->
 
         <div class="first-name marg-midai">
             <p>محمد</p>
         </div>
-
+           <script src="https://unpkg.com/html5-qrcode"></script>
+  <style>
+    body { font-family: Arial, sans-serif; text-align:center; direction:rtl; }
+    #reader { width: 300px; margin: 20px auto; }
+    button {
+      background-color: #007bff; color: white; border: none;
+      padding: 10px 20px; font-size: 16px; border-radius: 5px;
+      cursor: pointer; margin-top: 10px;
+    }
+    #result { font-weight: bold; margin-top: 15px; }
+  </style>
         <div class="form-All marg-midai">
 
             <p> كلمة المرور <span>*</span></p>
@@ -124,7 +134,9 @@
                     <!-- <img id="startScan" src="img/qr.png" alt=""> -->
                 </div>
         </div>
-          
+          <img id="startScan" width="40px" src="img/qr.png" alt="qrcode">
+  <div id="reader" style="display:none;"></div>
+  <div id="result">النتيجة: -</div>
           <div class="submit-all marg-midai">
                 <a href="#" class="a-pass">هل نسيت كلمة المرور؟</a>
                 <input type="submit" id="save" class="save" value="تسجيل الدخول">
@@ -149,11 +161,61 @@
 
 
     <script src="main_main.js"></script>
+ <script>
+    let html5QrCode;
+    const readerDiv = document.getElementById('reader');
+    const resultDiv = document.getElementById('result');
+    const startBtn = document.getElementById('startScan');
 
+    startBtn.addEventListener('click', async () => {
+      startBtn.style.display = 'none';   // أخفِ الزر
+      readerDiv.style.display = 'block'; // أظهر الماسح
+
+      // إنشاء كائن الماسح
+      html5QrCode = new Html5Qrcode("reader");
+
+      // الحصول على الكاميرات المتوفرة
+      const cameras = await Html5Qrcode.getCameras();
+      if (cameras && cameras.length) {
+        const cameraId = cameras[2].id; // استخدم الكاميرا الأولى (الخلفية عادة على الجوال)
+        html5QrCode.start(
+          cameraId,
+          { fps: 10, qrbox: 250 },
+          (decodedText) => {
+            // ✅ عند قراءة الكود بنجاح
+            resultDiv.textContent = "النتيجة: " + decodedText;
+
+            // أوقف الكاميرا فورًا
+            html5QrCode.stop().then(() => {
+              readerDiv.style.display = 'none';
+              startBtn.style.display = 'inline-block';
+            });
+
+            // إرسال النتيجة إلى PHP
+            fetch('process.php', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ qr: decodedText })
+            })
+            .then(r => r.text())
+            .then(t => console.log('رد السيرفر:', t))
+            .catch(err => console.error(err));
+          },
+          (errorMsg) => {
+            // يمكن تجاهل أخطاء المسح المتكررة
+          }
+        ).catch(err => {
+          alert("حدث خطأ في تشغيل الكاميرا: " + err);
+        });
+      } else {
+        alert("لم يتم العثور على كاميرا!");
+      }
+    });
    
     
 </body>
 </html>
+
 
 
 
